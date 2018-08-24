@@ -8,8 +8,8 @@
   .menu-btn .btn-line {
     width: 28px;
     height: 3px;
-    margin: 0 0  5px 0;
-    background: #000;
+    margin: 0 0 5px 0;
+    background: #fff;
     transition: all 0.5s ease-out; }
   .menu-btn.close {
     transform: rotate(180deg); }
@@ -37,34 +37,35 @@
     width: 50%;
     height: 100vh;
     overflow: hidden; }
-    .menu-branding.show, .menu-nav.show {
-      transform: translate3d(0, 0, 0); }
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #c4c7c2;
+    background: #030305;
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
+    .menu-nav.show {
+      transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: #D1d3cf;
+    background: #0e0B16;
     transform: translate3d(0, 100%, 0);
     transition: all 0.5s ease-out; }
+    .menu-branding.show {
+      transform: translate3d(0, 0, 0); }
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
       background: url("../img/portrait.jpg");
-      background-size: cover;
       border-radius: 50%;
-      border: solid #6b82a8 3px;
-      opacity: 1; }
+      border: solid 3px #a239ca;
+      background-size: cover; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #6b82a8; }
+      color: #a239ca; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -72,12 +73,11 @@
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
-    color: #000;
+    color: #fff;
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
-      color: #6b82a8;
-      font-size: 50px; }
+      color: #a239ca; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -95,8 +95,8 @@
   box-sizing: border-box; }
 
 body {
-  background: #D1d3cf;
-  color: #000;
+  background: #0e0B16;
+  color: #fff;
   height: 100%;
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -113,18 +113,23 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(209, 211, 207, 0.9); }
+      background: rgba(14, 11, 22, 0.9); }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin: 0;
   font-weight: 400; }
-  h1.lg-heading, h2.lg-heading, h3.lg-heading {
+  h1.lg-heading,
+  h2.lg-heading,
+  h3.lg-heading {
     font-size: 6rem; }
-  h1.sm-heading, h2.sm-heading, h3.sm-heading {
+  h1.sm-heading,
+  h2.sm-heading,
+  h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(214, 216, 212, 0.5);
-    width: 100%; }
+    background: rgba(18, 14, 29, 0.5); }
 
 a {
   color: #fff;
@@ -136,19 +141,17 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #6b82a8; }
+  color: #a239ca; }
 
 main {
-  padding: 5rem;
-  float: right;
-  height: 100%;
+  padding: 4rem;
   min-height: calc(100vh - 60px); }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #6b82a8;
+        color: #a239ca;
         transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
@@ -158,38 +161,37 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "bio-image bio bio" "job-1 job-2 job-3";
+  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
   grid-template-columns: repeat(3, 1fr); }
-  .about-info .bio-img {
-    grid-area: bio-image;
+  .about-info .bio-image {
+    grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
-    border: #6b82a8 3px solid; }
+    border: #a239ca 3px solid; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
   .about-info .job-1 {
-    grid-area: job-1; }
+    grid-area: job1; }
   .about-info .job-2 {
-    grid-area: job-2; }
+    grid-area: job2; }
   .about-info .job-3 {
-    grid-area: job-3; }
+    grid-area: job3; }
   .about-info .job {
-    background: #dedfdc;
+    background: #191427;
     padding: 0.5rem;
-    border-bottom: #6b82a8 5px solid; }
+    border-bottom: #a239ca 5px solid; }
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 0.7rem; }
+  grid-gap: 0.7rem;
+  grid-template-columns: repeat(3, 1fr); }
   .projects img {
     width: 100%;
-    height: 10rem;
-    border: 3px white solid; }
+    border: 3px #fff solid; }
     .projects img:hover {
       opacity: 0.5;
-      border-color: #6b82a8;
+      border-color: #a239ca;
       transition: all 0.5s ease-out; }
 
 .boxes {
@@ -200,14 +202,13 @@ main {
   margin-top: 1rem; }
   .boxes div {
     font-size: 2rem;
-    border: 3px white solid;
+    border: 3px #fff solid;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
-    transition: all 0.5s ease-out;
-    cursor: pointer; }
+    transition: all 0.5s ease-out; }
     .boxes div:hover {
-      padding: 2rem 3rem;
-      background: #6b82a8;
+      padding: 0.5rem 1.5rem;
+      background: #a239ca;
       color: #000; }
       .boxes div:hover span {
         color: #000; }
@@ -218,23 +219,22 @@ main {
   border: 0;
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background-color: #6b82a8;
-    color: #000;
-    transition: all 0.5s ease-out; }
+    background: #a239ca;
+    color: #000; }
 
 .btn-dark {
-  background: #52554e;
-  color: #FFF; }
+  background: black;
+  color: #fff; }
 
 .btn-light {
-  background: white;
+  background: #7f6bb5;
   color: #333; }
 
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: #b8bbb4;
-  color: #000;
+  background: black;
+  color: #fff;
   height: 60px; }
 
 @media screen and (min-width: 1171px) {

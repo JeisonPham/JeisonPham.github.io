@@ -277,7 +277,6 @@ main {
       height: 150px; }
   .about-info {
     margin: 0 auto;
-    border: 10px solid white;
     width: 100%;
     display: flex;
     flex-direction: column;

@@ -320,12 +320,12 @@ main {
       background-size: cover;
       width: 150px;
       height: 150px; }
-  #contact h1.lg-heading {
-    text-align: center;
-    margin: 0 auto;
-    font-size: 2rem; }
   #contact div {
     width: 100%;
     word-wrap: break-word;
     margin: 0 auto;
-    font-size: 1rem; } }
+    font-size: 1rem; }
+  h1.lg-heading {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 4rem; } }
